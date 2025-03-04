@@ -132,40 +132,98 @@ a:hover{
 /*--------------------------------------------------------------------------------------------------*/
 
 .grid-item3{
-   
+   background-color: orange;
     height: 100%;
     width: 100%;
     grid-column-start:2;
     grid-column-end:3;
     grid-row-start:1;
     grid-row-end:3;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-rows:60% 40% ;
     
    
 }
 
+.table-div{
+   
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+}
 
+#table{
+    height: 60%;
+    margin-top: 5%;
+    background-color: aliceblue;
+}
+
+th{
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 20px;
+    height: 10%;
+}
+
+.Title-Description{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#Telc{
+    display: flex;
+    justify-content: center;
+}
+
+#Schaeffer{
+    display: flex;
+    justify-content: center;
+}
+
+#DM-Stahl{
+    display: flex;
+    justify-content: center;
+}
+
+#Fernandes{
+    display: flex;
+    justify-content: center;
+}
+
+#table#table-head{
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    border: 1px solid black;
+    
+}
+.Description{
+    font-weight: bold;
+}
 
 
 #text{
     
-    margin-top: 10%;
-   
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 h1{
-    margin-left: 40%;
+    margin-left: 50%;
     font-size: 30px;
 }
 
 h2{
-    margin-left: 40%;
+    margin-left: 50%;
     font-size: 30px;
 
 }
 p{
-    margin-left: 20%;
+    
     font-size: 20px;
 }
 
