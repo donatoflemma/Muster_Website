@@ -10,9 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,600&display=swap" rel="stylesheet">
 </head>
-<div>
+<body>
     
         <nav id="div-bare">
+            <button onclick="toggleColor()" id="button">Change color</button>
             <ul >
 
                 <li class="link-bare"><a  href="">Projekt</a>
@@ -55,8 +56,8 @@
                         </li>
 
                         <li >
-                    <a class="name-adresse" href="" >Trovarne un´altro</a>    
-                        </li>
+                    <a class="name-adresse" href="mailto:tato.flemma@gmail.com" >Send me a e-mail</a>    
+                        </li>   <!--con mailto si puo collegare l´email dell´User al suo Softwer per inviare lettere -->
 
                     </ul>
                 </nav>  
@@ -138,11 +139,29 @@
                             - HTML und CSS </td>
                     </tr>
                 </table>
-            </div>
+            </body>
         </div>    
        
         
     </div>
+    <script>
+        let isOriginal = true;
+
+        function toggleColor() {
+            if (isOriginal) {
+                document.body.style.backgroundColor = "black";
+                document.getElementById("div-bare").style.backgroundColor = "black";
+                document.getElementById("div-bare").style.backgroundColor = "black";
+                
+                 
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.getElementById("div-bare").style.backgroundColor = "white"; // Torna al colore originale
+                
+            }
+            isOriginal = !isOriginal; // Inverte lo stato
+        }
+    </script>
     
 </body>
 </html>
